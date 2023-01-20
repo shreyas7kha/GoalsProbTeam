@@ -6,10 +6,10 @@ from functions import (complementaryColor, scrap_main_func, process_data, league
 from plot import make_plot
 
 # APP TITLE
-st.title("Post Shot Evaluation of Teams\n")
+st.title("xG Distribution of Teams\n")
 
-st.text("An app to evaluate shooting of various teams and see how well they finished in"+
-        "\ncomparison to the quality of chances they got and conceded")
+st.text("An app to evaluate shooting of various teams and see the probability of goals"+
+        "they scored\nand conceded in comparison to the quality of chances they got and conceded")
 st.caption("Made by Shreyas Khatri. Twitter: @khatri_shreyas\n\n", unsafe_allow_html=False)
 
 # WIDGETS
