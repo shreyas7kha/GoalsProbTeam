@@ -130,7 +130,7 @@ def make_plot(team_name, season, tot_goals_scored, tot_goals_conceded, matches, 
             no_simulations, background, team_col)
     ax3.set_xlabel('Number of Goals Conceded', size=13, weight='bold')
     ax3.set_ylabel('Probability', size=13, weight='bold')
-    ax3.set_title('Probability of Goals Conceded Based on Shot Simulation ({:.2f} xG Against)'.format(sum(shots_opp)), 
+    ax3.set_title('Probability of Goals Conceded Based on Shot Simulation ({:.2f} xGA)'.format(sum(shots_opp)), 
                 size=16, weight='bold', loc='left', c='#878787')
     x_pt1 = ax3.get_xlim()[0] + 0.875*(ax3.get_xlim()[1]-ax3.get_xlim()[0])
     x_pt2 = ax3.get_xlim()[0] + 0.125*(ax3.get_xlim()[1]-ax3.get_xlim()[0])
@@ -182,10 +182,10 @@ def make_plot(team_name, season, tot_goals_scored, tot_goals_conceded, matches, 
     ax2.set_ylabel('Density', size=12, weight='bold')
     ax2.set_xlabel('xG Value of Shot', size=12, weight='bold')
     ax2.set_yticklabels([y/10 for y in ax2.get_yticks()])
-    ax2.text(0.175, 0.7*ax2.get_ylim()[1], 'Solid line represents density distribution of value\nof'+
-            f' shots taken by {team_name} in {season%2000}/{season%2000+1}.', size=9, c=team_col)
-    ax2.text(0.175, 0.5*ax2.get_ylim()[1], 'Dashed line represents density distribution of value\n'+
-            f' of shots conceded by {team_name} in {season%2000}/{season%2000+1}.', size=9, c=comp_col)
+    ax2.text(0.175, 0.7*ax2.get_ylim()[1], 'Solid line represents density distribution of\nvalue of'+
+            f' shots taken by {team_name}\nin {season%2000}/{season%2000+1}.', size=9, c=team_col)
+    ax2.text(0.175, 0.4*ax2.get_ylim()[1], 'Dashed line represents density distribution of\nvalue'+
+            f' of shots conceded by {team_name}\nin {season%2000}/{season%2000+1}.', size=9, c=comp_col)
 
     # LABELS
     fig.text(0.03,0.95,'TEAM xG DISTRIBUTION', size=30, c='#878787')
