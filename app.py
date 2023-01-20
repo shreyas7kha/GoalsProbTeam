@@ -1,6 +1,5 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
+from PIL import Image
 import matplotlib.pyplot as plt
 from info import *
 from functions import (complementaryColor, scrap_main_func, process_data, league_team_data, process_league_data)
@@ -79,3 +78,12 @@ if st.button("Make visualisation"):
             file_name="GoalsProb.png",
             mime="image/png"
            )
+
+# SHOW EXAMPLES OF THEMES
+col1, col2 = st.columns(2)
+
+image = Image.open('static/White.png')
+col1.image(image, caption='Light theme')
+
+image = Image.open('static/Black.png')
+col2.image(image, caption='Dark theme')
