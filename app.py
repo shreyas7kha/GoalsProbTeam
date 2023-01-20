@@ -9,7 +9,7 @@ from plot import make_plot
 st.title("xG Distribution of Teams\n")
 
 st.text("An app to evaluate shooting of various teams and see the probability of goals"+
-        "they scored\nand conceded in comparison to the quality of chances they got and conceded")
+        "they\nscored and conceded in comparison to the quality of chances they got and conceded")
 st.caption("Made by Shreyas Khatri. Twitter: @khatri_shreyas\n\n", unsafe_allow_html=False)
 
 # WIDGETS
