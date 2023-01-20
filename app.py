@@ -80,6 +80,7 @@ if st.button("Make visualisation"):
            )
 
 # SHOW EXAMPLES OF THEMES
+st.subheader("Examples of charts:")
 col1, col2 = st.columns(2)
 
 image = Image.open('static/White.png')
