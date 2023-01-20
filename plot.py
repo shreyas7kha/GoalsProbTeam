@@ -183,9 +183,9 @@ def make_plot(team_name, season, tot_goals_scored, tot_goals_conceded, matches, 
     ax2.set_xlabel('xG Value of Shot', size=12, weight='bold')
     ax2.set_yticklabels([y/10 for y in ax2.get_yticks()])
     ax2.text(0.175, 0.7*ax2.get_ylim()[1], 'Solid line represents density distribution\nof value of'+
-            f' shots taken by {team_name}\nin {season%2000}/{season%2000+1}.', size=9, c=team_col)
+            f' shots taken by\n{team_name} in {season%2000}/{season%2000+1}.', size=9, c=team_col)
     ax2.text(0.175, 0.4*ax2.get_ylim()[1], 'Dashed line represents density distribution\nof value'+
-            f' of shots conceded by {team_name}\nin {season%2000}/{season%2000+1}.', size=9, c=comp_col)
+            f' of shots conceded by\n{team_name} in {season%2000}/{season%2000+1}.', size=9, c=comp_col)
 
     # LABELS
     fig.text(0.03,0.95,'TEAM xG DISTRIBUTION', size=30, c='#878787')
