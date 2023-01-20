@@ -69,7 +69,7 @@ def make_plot(team_name, season, tot_goals_scored, tot_goals_conceded, matches, 
         no_simulations, shots_team, shots_opp, shots_for_rank, xg_for_rank, xg_pshot_rank, shots_a_rank, xg_a_rank, xg_pshot_a_rank, 
         background, text_col, team_col, comp_col, col_bar_1, col_bar_2):
 
-    mpl.rcParams['font.family']= 'Century Gothic'
+    mpl.rcParams['font.family']= 'Monospace'
     mpl.rcParams['font.size'] = 11
     mpl.rcParams['font.weight'] = 'bold'
     mpl.rcParams['text.color'] = text_col
